@@ -1,0 +1,60 @@
+# =============================================================================
+# Market Data Configuration
+# =============================================================================
+# This file configures external market data providers for the betting application.
+# Copy this file to marketdata.properties and update with your credentials.
+#
+# Usage: java -jar betting-app.jar --marketdata=marketdata.properties
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Provider Selection
+# -----------------------------------------------------------------------------
+# Specifies which market data provider to use.
+# Currently supported: ETRADE
+marketdata.provider=ETRADE
+
+# -----------------------------------------------------------------------------
+# E*TRADE API Credentials
+# -----------------------------------------------------------------------------
+# Get your API keys from: https://developer.etrade.com/
+# 1. Create a developer account
+# 2. Register your application
+# 3. Get sandbox and/or production keys
+
+# Your E*TRADE API consumer key
+consumer.key=YOUR_CONSUMER_KEY_HERE
+
+# Your E*TRADE API consumer secret
+consumer.secret=YOUR_CONSUMER_SECRET_HERE
+
+# -----------------------------------------------------------------------------
+# Environment Settings
+# -----------------------------------------------------------------------------
+# Use sandbox environment for testing (true) or production (false)
+# Sandbox: https://apisb.etrade.com
+# Production: https://api.etrade.com
+use.sandbox=true
+
+# -----------------------------------------------------------------------------
+# Quote Subscription Settings
+# -----------------------------------------------------------------------------
+# Polling interval for quote updates (in seconds)
+# Minimum recommended: 5 seconds to avoid rate limiting
+poll.interval.seconds=5
+
+# -----------------------------------------------------------------------------
+# Authentication Settings
+# -----------------------------------------------------------------------------
+# Authentication mode: "ui" for dialog-based, "cli" for command-line
+# - ui: Shows a JavaFX dialog with the authorization URL and input field
+# - cli: Prints the URL to console and reads verification code from stdin
+auth.mode=ui
+
+# Auto-authenticate on startup: true or false
+# When true, the application will automatically prompt for authentication
+# when the market data service is initialized
+auth.auto=true
+
+# OAuth tokens are cached in memory during the session.
+# You will need to re-authenticate when the application restarts.

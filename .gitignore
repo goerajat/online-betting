@@ -1,0 +1,20 @@
+# Build output
+target/
+
+# IDE
+.idea/
+*.iml
+.claude/
+
+# Credentials and keys
+*.pem
+Java-API-Key*
+**/etrade-config.properties
+**/keys
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

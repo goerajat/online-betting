@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.betting</groupId>
+    <artifactId>online-betting</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>etrade-sample-app</artifactId>
+  <packaging>jar</packaging>
+
+  <name>etrade-sample-app</name>
+  <description>E*TRADE API Sample Application</description>
+
+  <dependencies>
+    <!-- E*TRADE API Client -->
+    <dependency>
+      <groupId>com.betting</groupId>
+      <artifactId>etrade-api</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
+    <!-- Logging Implementation -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.1.0</version>
+        <configuration>
+          <mainClass>com.betting.etrade.sample.ETradeApp</mainClass>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
