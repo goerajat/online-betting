@@ -20,7 +20,7 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
           cache: 'maven'
-          server-id: github-connectivity
+          server-id: github-omnibridge
           server-username: GITHUB_ACTOR
           server-password: GITHUB_TOKEN
 

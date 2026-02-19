@@ -96,8 +96,8 @@
 
   <repositories>
     <repository>
-      <id>github-connectivity</id>
-      <url>https://maven.pkg.github.com/goerajat/connectivity</url>
+      <id>github-omnibridge</id>
+      <url>https://maven.pkg.github.com/goerajat/omnibridge</url>
     </repository>
   </repositories>
 
