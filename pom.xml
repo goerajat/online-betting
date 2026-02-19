@@ -80,6 +80,13 @@
     </dependencies>
   </dependencyManagement>
 
+  <repositories>
+    <repository>
+      <id>github-connectivity</id>
+      <url>https://maven.pkg.github.com/goerajat/connectivity</url>
+    </repository>
+  </repositories>
+
   <build>
     <pluginManagement>
       <plugins>
